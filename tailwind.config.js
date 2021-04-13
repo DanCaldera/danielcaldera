@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./components/**/*.tsx', './pages/**/*.tsx'],
   plugins: [
@@ -12,7 +14,10 @@ module.exports = {
         'accent-2': '#EAEAEA',
         'accent-7': '#333',
         success: '#0070f3',
-        cyan: '#79FFE1',
+        'light-blue': colors.lightBlue,
+        teal: colors.teal,
+        cyan: colors.cyan,
+        rose: colors.rose,
       },
       spacing: {
         28: '7rem',
