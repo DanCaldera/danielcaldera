@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import { CMS_NAME } from '../lib/constants'
 import { FaGithub } from 'react-icons/fa'
+import Link from 'next/link'
 
 const Index = () => {
   const [open, setOpen] = React.useState(true)
@@ -18,7 +19,7 @@ const Index = () => {
               <div className="relative flex flex-wrap items-center justify-center lg:justify-between">
                 {/* <!-- Logo --> */}
                 <div className="absolute left-0 py-5 flex-shrink-0 lg:static">
-                  <a href="#">
+                  <a href="/">
                     <img
                       className="h-16 w-auto -mb-2"
                       src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618298901/danrepasologo_jpz4ll.png"
@@ -33,19 +34,18 @@ const Index = () => {
                     <div className="hidden lg:block lg:col-span-2">
                       <nav className="flex space-x-4">
                         <a
-                          href="#"
+                          href="/"
                           className="text-white text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10"
                           aria-current="page"
                         >
                           Home
                         </a>
 
-                        <a
-                          href="#"
-                          className="text-cyan-100 text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10"
-                        >
-                          Profile
-                        </a>
+                        <Link href="/profile">
+                          <a className="text-cyan-100 text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10">
+                            Profile
+                          </a>
+                        </Link>
 
                         <a
                           href="#"
@@ -332,7 +332,7 @@ const Index = () => {
                             </a>
                           </h3>
                           <p className="mt-2 text-sm text-gray-500">
-                            All public and private actual projects
+                            Public and private actual projects
                           </p>
                         </div>
                         <span
