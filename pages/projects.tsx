@@ -287,7 +287,7 @@ const Projects = () => {
                       </p>
                       <p className="mt-3 text-base text-gray-500">
                         Viral Project to collect funds for LatinXMafia
-                        foundation.
+                        foundation selling handles to redirect to twitter.
                       </p>
                       <p className="mt-3 text-base text-gray-500">
                         Technologies: Nextjs, Firebase and Stripe
