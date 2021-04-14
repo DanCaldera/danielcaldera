@@ -177,61 +177,275 @@ const Projects = () => {
             </div>
           )}
         </nav>
-        <div>
-          <div>
-            <img
-              className="h-32 w-full object-cover lg:h-48"
-              src="https://images.unsplash.com/photo-1444628838545-ac4016a5418a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-              alt=""
-            />
-          </div>
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="-mt-12 sm:-mt-16 sm:flex sm:items-end sm:space-x-5">
-              <div className="flex">
-                <img
-                  className="h-24 w-24 rounded-full ring-4 ring-white sm:h-32 sm:w-32"
-                  src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618297277/Captura_de_Pantalla_2021-04-13_a_la_s_1.58.22_b86epk.png"
-                  alt=""
-                />
-              </div>
-              <div className="mt-6 sm:flex-1 sm:min-w-0 sm:flex sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
-                <div className="sm:hidden md:block mt-6 min-w-0 flex-1">
-                  <h1 className="text-2xl font-bold text-gray-900 truncate">
-                    Daniel Caldera
-                  </h1>
-                </div>
-                <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
-                  <button
-                    type="button"
-                    className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
-                  >
-                    {/* <!-- Heroicon name: solid/mail --> */}
-                    <svg
-                      className="-ml-1 mr-2 h-5 w-5 text-gray-400"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                    </svg>
-                    <span>Email</span>
-                  </button>
-                  <button
-                    type="button"
-                    className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
-                  >
-                    <FaWhatsapp className="-ml-1 mr-2 h-5 w-5 text-gray-400" />
-                    <span>Whatsapp</span>
-                  </button>
-                </div>
-              </div>
+        {/* <img
+          className="h-32 w-full object-cover lg:h-48"
+          src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+          alt=""
+        /> */}
+        <div className="bg-white">
+          <div className="max-w-7xl mx-auto py-4 px-4 sm:py-16 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h2 className="text-base font-semibold text-cyan-600 tracking-wide uppercase">
+                Projects
+              </h2>
+              <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+                Personal and Private Projects.
+              </p>
+              <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+                When something is important enough, you do it even if the odds
+                are not in your favor.
+              </p>
+              <p className="max-w-xl italic mx-auto text-base text-gray-500">
+                - Elon Musk
+              </p>
             </div>
-            <div className="hidden sm:block md:hidden mt-6 min-w-0 flex-1">
-              <h1 className="text-2xl font-bold text-gray-900 truncate">
-                Ricardo Cooper
-              </h1>
+          </div>
+        </div>
+
+        {/* // Projects */}
+        <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-12 lg:pb-28 lg:px-8">
+          <div className="absolute inset-0">
+            <div className="bg-white h-1/3 sm:h-2/3"></div>
+          </div>
+          <div className="relative max-w-7xl mx-auto">
+            <div className="max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+              <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0">
+                  <img
+                    className="h-48 w-full object-cover"
+                    src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618394670/Captura_de_Pantalla_2021-04-14_a_la_s_5.04.19_upmokb.png"
+                    alt=""
+                  />
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-cyan-600">
+                      <a
+                        href="https://repasoenarm.com/"
+                        className="hover:underline"
+                      >
+                        Web App and Mobile App
+                      </a>
+                    </p>
+                    <a href="https://repasoenarm.com/" className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900">
+                        Repaso ENARM
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Web and Mobile apps to make medical students and doctors
+                        to succeed in the ENARM test for medical specialization
+                        in Mexico.
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Technologies: Nextjs, TailwindCss, Stripe, React Native
+                        (iOS and Android), Express and MongoDB
+                      </p>
+                    </a>
+                  </div>
+                  <div className="mt-6 flex items-center">
+                    <div className="flex-shrink-0">
+                      <span className="sr-only">Daniel Caldera</span>
+                      <img
+                        className="h-10 w-10 rounded-full"
+                        src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618297277/Captura_de_Pantalla_2021-04-13_a_la_s_1.58.22_b86epk.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-900">
+                        Daniel Caldera
+                      </p>
+                      <div className="flex space-x-1 text-sm text-gray-500">
+                        <time dateTime="2020-02-12">In Progress</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0">
+                  <img
+                    className="h-48 w-full object-cover"
+                    src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618393202/Captura_de_Pantalla_2021-04-14_a_la_s_4.39.52_kshvr2.png"
+                    alt=""
+                  />
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-cyan-600">
+                      <a
+                        href="https://dumbhandles.xyz/"
+                        className="hover:underline"
+                      >
+                        Web App
+                      </a>
+                    </p>
+                    <a href="https://dumbhandles.xyz/" className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900">
+                        dumbhandles
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Viral Project to collect funds for LatinXMafia
+                        foundation.
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Technologies: Nextjs, Firebase (Authentication,
+                        Fiestore) and Stripe
+                      </p>
+                    </a>
+                  </div>
+                  <div className="mt-6 flex items-center">
+                    <div className="flex-shrink-0">
+                      <a href="https://twitter.com/LatinxMafia">
+                        <span className="sr-only">Roel Aufderehar</span>
+                        <img
+                          className="h-10 w-10 rounded-full"
+                          src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618393413/81450251_atv0rf.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-900">
+                        <a
+                          href="https://twitter.com/LatinxMafia"
+                          className="hover:underline"
+                        >
+                          LatinXMafia
+                        </a>
+                      </p>
+                      <div className="flex space-x-1 text-sm text-gray-500">
+                        <time dateTime="2020-03-16">Mar 11, 2021</time>
+                        {/* <span aria-hidden="true">&middot;</span> */}
+                        {/* <span>6 min read</span> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0">
+                  <img
+                    className="h-48 w-full object-cover"
+                    src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618394299/Captura_de_Pantalla_2021-04-14_a_la_s_4.58.08_kejw41.png"
+                    alt=""
+                  />
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-cyan-600">
+                      <a
+                        href="https://www.sandiegored.com/es/noticias/186588/Programadores-Mexicanos-Desarrollan-Tecnologia-en-Hackathon-Durante-la-Pandemia"
+                        className="hover:underline"
+                      >
+                        1st Place Hackify League (San Diego Red Mention)
+                      </a>
+                    </p>
+                    <a
+                      href="https://fans-app.vercel.app/movies"
+                      className="block mt-2"
+                    >
+                      <p className="text-xl font-semibold text-gray-900">
+                        MovieFans
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        WebApp developed for Hackify League obtaining first
+                        place in tomatazos challenge
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Technologies: Create React App, Redux, GraphQL, MongoDB
+                        and themoviedb API
+                      </p>
+                    </a>
+                  </div>
+                  <div className="mt-6 flex items-center">
+                    <div className="flex-shrink-0">
+                      <a href="https://www.facebook.com/hackifyLeague">
+                        <span className="sr-only">Hackify League</span>
+                        <img
+                          className="h-10 w-10 rounded-full"
+                          src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618396016/descarga_v1ayla.png"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-900">
+                        <a
+                          href="https://www.facebook.com/hackifyLeague"
+                          className="hover:underline"
+                        >
+                          Hackify League
+                        </a>
+                      </p>
+                      <div className="flex space-x-1 text-sm text-gray-500">
+                        <time dateTime="2020-03-16">Jun, 2020</time>
+                        {/* <span aria-hidden="true">&middot;</span> */}
+                        {/* <span>6 min read</span> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0">
+                  <video
+                    className="h-48 w-full"
+                    src="https://res.cloudinary.com/dtip8wwch/video/upload/v1618337754/Grabaci%C3%B3n_de_pantalla_2021-04-13_a_la_s_13.14.13_szpk25.mov"
+                    playsInline
+                    loop
+                    autoPlay={true}
+                    muted
+                  />
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-cyan-600">
+                      <a
+                        href="https://repasoenarm.com/"
+                        className="hover:underline"
+                      >
+                        Research
+                      </a>
+                    </p>
+                    <a href="https://repasoenarm.com/" className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900">
+                        Myoelectric Signal Analysis for Neuromuscular Function
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Several projects related to HDEMG and EMG analysis with
+                        MITACS program.
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Technologies: MATLAB
+                      </p>
+                    </a>
+                  </div>
+                  <div className="mt-6 flex items-center">
+                    <div className="flex-shrink-0">
+                      <a href="https://www.unb.ca/">
+                        <span className="sr-only">Daniel Caldera</span>
+                        <img
+                          className="h-10 w-10 rounded-full"
+                          src="http://www2.unb.ca/~alloyd1/UNBRED+BLACK.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-900">
+                        University of New Brunswick
+                      </p>
+                      <div className="flex space-x-1 text-sm text-gray-500">
+                        <time dateTime="2020-03-10">Oct, 2019</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
