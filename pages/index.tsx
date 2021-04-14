@@ -6,7 +6,7 @@ import { FaGithub } from 'react-icons/fa'
 import Link from 'next/link'
 
 const Index = () => {
-  const [open, setOpen] = React.useState(true)
+  const [open, setOpen] = React.useState(false)
   return (
     <>
       <Layout>
@@ -33,13 +33,14 @@ const Index = () => {
                     {/* <!-- Left nav --> */}
                     <div className="hidden lg:block lg:col-span-2">
                       <nav className="flex space-x-4">
-                        <a
-                          href="/"
-                          className="text-white text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10"
-                          aria-current="page"
-                        >
-                          Home
-                        </a>
+                        <Link href="/">
+                          <a
+                            className="text-white text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10"
+                            aria-current="page"
+                          >
+                            Home
+                          </a>
+                        </Link>
 
                         <Link href="/profile">
                           <a className="text-cyan-100 text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10">
@@ -82,9 +83,9 @@ const Index = () => {
                       aria-hidden="true"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M4 6h16M4 12h16M4 18h16"
                       />
                     </svg>
@@ -102,9 +103,9 @@ const Index = () => {
                       aria-hidden="true"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M6 18L18 6M6 6l12 12"
                       />
                     </svg>
@@ -161,9 +162,9 @@ const Index = () => {
                               aria-hidden="true"
                             >
                               <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
                                 d="M6 18L18 6M6 6l12 12"
                               />
                             </svg>
@@ -171,26 +172,23 @@ const Index = () => {
                         </div>
                       </div>
                       <div className="mt-3 px-2 space-y-1">
-                        <a
-                          href="#"
-                          className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
-                        >
-                          Home
-                        </a>
+                        <Link href="/">
+                          <a className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800">
+                            Home
+                          </a>
+                        </Link>
 
-                        <a
-                          href="#"
-                          className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
-                        >
-                          Profile
-                        </a>
+                        <Link href="/profile">
+                          <a className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800">
+                            Profile
+                          </a>
+                        </Link>
 
-                        <a
-                          href="#"
-                          className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800"
-                        >
-                          Projects
-                        </a>
+                        <Link href="/projects">
+                          <a className="block rounded-md px-3 py-2 text-base text-gray-900 font-medium hover:bg-gray-100 hover:text-gray-800">
+                            Projects
+                          </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -242,12 +240,11 @@ const Index = () => {
                             </div>
                           </div>
                           <div className="mt-5 flex justify-center sm:mt-0">
-                            <a
-                              href="#"
-                              className="flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
-                            >
-                              View profile
-                            </a>
+                            <Link href="/profile">
+                              <a className="flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                                View profile
+                              </a>
+                            </Link>
                           </div>
                         </div>
                       </div>

@@ -6,7 +6,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-const Profile = () => {
+const Projects = () => {
   const router = useRouter()
   const [open, setOpen] = React.useState(false)
 
@@ -16,8 +16,6 @@ const Profile = () => {
         <Head>
           <title>{CMS_NAME}</title>
         </Head>
-
-        {/* //! NavBar */}
         <nav className="bg-gradient-to-r from-light-blue-800 to-cyan-600">
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
@@ -179,8 +177,6 @@ const Profile = () => {
             </div>
           )}
         </nav>
-
-        {/* //! Header */}
         <div>
           <div>
             <img
@@ -206,11 +202,8 @@ const Profile = () => {
                 </div>
                 <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
                   <button
-                    onClick={() =>
-                      (window.location.href = 'mailto:bdcaldera@gmail.com')
-                    }
                     type="button"
-                    className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+                    className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
                   >
                     {/* <!-- Heroicon name: solid/mail --> */}
                     <svg
@@ -225,145 +218,20 @@ const Profile = () => {
                     </svg>
                     <span>Email</span>
                   </button>
-                  {/* <button
+                  <button
                     type="button"
-                    className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+                    className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
                   >
                     <FaWhatsapp className="-ml-1 mr-2 h-5 w-5 text-gray-400" />
                     <span>Whatsapp</span>
-                  </button> */}
+                  </button>
                 </div>
               </div>
             </div>
             <div className="hidden sm:block md:hidden mt-6 min-w-0 flex-1">
               <h1 className="text-2xl font-bold text-gray-900 truncate">
-                Daniel Caldera
+                Ricardo Cooper
               </h1>
-            </div>
-          </div>
-        </div>
-        {/* //! Information */}
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-white shadow overflow-hidden sm:rounded-lg">
-              <div className="px-4 py-5 sm:px-6">
-                <h3 className="text-lg leading-6 font-medium text-gray-900">
-                  Profile
-                </h3>
-                <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                  Short Resume
-                </p>
-              </div>
-              <div className="border-t border-gray-200 px-4 py-5 sm:px-6">
-                <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Full name
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      Daniel Caldera Rosas
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Email address
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      bdcaldera@gmail.com
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Degree
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      Biomedical Engineer
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      University
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      Universidad De Guadalajara
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Especiality
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      MERN Developer
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Experience
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">+1 Years</dd>
-                  </div>
-
-                  <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Location
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      Jerez, Zacatecas México
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-2">
-                    <dt className="text-sm font-medium text-gray-500">About</dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      I’m a Biomedical Engineer from ”Universidad de
-                      Guadalajara”, My main language is Javascript and I have
-                      preferences to use react family tecnologies (like nextjs),
-                      React Native for Multiplatform applications, also I have
-                      knowledge creating RESTapi with Nodejs or using new
-                      tecnologies trends such as GraphQL.
-                    </dd>
-                  </div>
-                  <div className="sm:col-span-2">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Attachments
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      <ul className="border border-gray-200 rounded-md divide-y divide-gray-200">
-                        <li className="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
-                          <div className="w-0 flex-1 flex items-center">
-                            {/* <!-- Heroicon name: solid/paper-clip --> */}
-                            <svg
-                              className="flex-shrink-0 h-5 w-5 text-gray-400"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                              aria-hidden="true"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
-                            <span className="ml-2 flex-1 w-0 truncate">
-                              cv.pdf
-                            </span>
-                          </div>
-                          <div className="ml-4 flex-shrink-0">
-                            <a
-                              href="https://repaso.s3-us-west-1.amazonaws.com/cv_dc.pdf"
-                              className="font-medium text-cyan-600 hover:text-cyan-500"
-                              download
-                            >
-                              Download
-                            </a>
-                          </div>
-                        </li>
-                      </ul>
-                    </dd>
-                  </div>
-                </dl>
-              </div>
             </div>
           </div>
         </div>
@@ -372,4 +240,4 @@ const Profile = () => {
   )
 }
 
-export default Profile
+export default Projects
