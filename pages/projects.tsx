@@ -298,7 +298,7 @@ const Projects = () => {
                   <div className="mt-6 flex items-center">
                     <div className="flex-shrink-0">
                       <a href="https://twitter.com/LatinxMafia">
-                        <span className="sr-only">Roel Aufderehar</span>
+                        <span className="sr-only">LatinXMafia</span>
                         <img
                           className="h-10 w-10 rounded-full"
                           src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618393413/81450251_atv0rf.png"
@@ -317,6 +317,70 @@ const Projects = () => {
                       </p>
                       <div className="flex space-x-1 text-sm text-gray-500">
                         <time dateTime="2020-03-16">Mar 11, 2021</time>
+                        {/* <span aria-hidden="true">&middot;</span> */}
+                        {/* <span>6 min read</span> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0">
+                  <img
+                    className="h-48 w-full object-cover"
+                    src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618397087/Captura_de_Pantalla_2021-04-14_a_la_s_5.44.34_djdmt0.png"
+                    alt=""
+                  />
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-cyan-600">
+                      <a
+                        href="https://apps.apple.com/us/app/garlock/id1520124341"
+                        className="hover:underline"
+                      >
+                        Mobile App
+                      </a>
+                    </p>
+                    <a
+                      href="https://apps.apple.com/us/app/garlock/id1520124341"
+                      className="block mt-2"
+                    >
+                      <p className="text-xl font-semibold text-gray-900">
+                        Garlock
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Mobile App for iOS and Android for the company leader in
+                        sealing integrity
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Technologies: React Native, Typescript
+                      </p>
+                    </a>
+                  </div>
+                  <div className="mt-6 flex items-center">
+                    <div className="flex-shrink-0">
+                      <a href="https://twitter.com/BoschMexico">
+                        <span className="sr-only">Bosch Mexico</span>
+                        <img
+                          className="h-10 w-10 rounded-full"
+                          src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618300222/FhlJ8nmt_400x400_la7tud.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-900">
+                        <a
+                          href="https://twitter.com/BoschMexico"
+                          className="hover:underline"
+                        >
+                          Bosch Mexico
+                        </a>
+                      </p>
+                      <div className="flex space-x-1 text-sm text-gray-500">
+                        <time dateTime="2020-03-16">Jul, 2020</time>
                         {/* <span aria-hidden="true">&middot;</span> */}
                         {/* <span>6 min read</span> */}
                       </div>
@@ -427,7 +491,9 @@ const Projects = () => {
                   <div className="mt-6 flex items-center">
                     <div className="flex-shrink-0">
                       <a href="https://www.unb.ca/">
-                        <span className="sr-only">Daniel Caldera</span>
+                        <span className="sr-only">
+                          University of New Brunswick
+                        </span>
                         <img
                           className="h-10 w-10 rounded-full"
                           src="http://www2.unb.ca/~alloyd1/UNBRED+BLACK.jpg"
