@@ -2,7 +2,6 @@ import Head from 'next/head'
 import React from 'react'
 import Layout from '../components/layout'
 import { CMS_NAME } from '../lib/constants'
-import { FaWhatsapp } from 'react-icons/fa'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
@@ -233,8 +232,8 @@ const Projects = () => {
                       </p>
                       <p className="mt-3 text-base text-gray-500">
                         Web and Mobile apps to make medical students and doctors
-                        to succeed in the ENARM test for medical specialization
-                        in Mexico.
+                        succeed in ENARM test for medical specialization in
+                        Mexico.
                       </p>
                       <p className="mt-3 text-base text-gray-500">
                         Technologies: Nextjs, TailwindCss, Typescript, Stripe,

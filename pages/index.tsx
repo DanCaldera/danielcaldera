@@ -48,12 +48,11 @@ const Index = () => {
                           </a>
                         </Link>
 
-                        <a
-                          href="#"
-                          className="text-cyan-100 text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10"
-                        >
-                          Projects
-                        </a>
+                        <Link href="/projects">
+                          <a className="text-cyan-100 text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10">
+                            Projects
+                          </a>
+                        </Link>
                       </nav>
                     </div>
                   </div>
@@ -319,14 +318,16 @@ const Index = () => {
                         </div>
                         <div className="mt-8">
                           <h3 className="text-lg font-medium">
-                            <a href="#" className="focus:outline-none">
-                              {/* <!-- Extend touch target to entire panel --> */}
-                              <span
-                                className="absolute inset-0"
-                                aria-hidden="true"
-                              ></span>
-                              Personal Projects
-                            </a>
+                            <Link href="/projects">
+                              <a className="focus:outline-none">
+                                {/* <!-- Extend touch target to entire panel --> */}
+                                <span
+                                  className="absolute inset-0"
+                                  aria-hidden="true"
+                                ></span>
+                                Personal Projects
+                              </a>
+                            </Link>
                           </h3>
                           <p className="mt-2 text-sm text-gray-500">
                             Public and private actual projects
@@ -381,8 +382,8 @@ const Index = () => {
                                 </h3>
                                 <p className="mt-1 text-sm text-gray-600 line-clamp-2">
                                   Web and Mobile apps to make medical students
-                                  and doctors to succeed in the ENARM test for
-                                  medical specialization in Mexico.
+                                  and doctors succeed in ENARM test for medical
+                                  specialization in Mexico.
                                 </p>
                               </div>
                             </li>
