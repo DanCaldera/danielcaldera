@@ -237,8 +237,8 @@ const Projects = () => {
                         in Mexico.
                       </p>
                       <p className="mt-3 text-base text-gray-500">
-                        Technologies: Nextjs, TailwindCss, Stripe, React Native
-                        (iOS and Android), Express and MongoDB
+                        Technologies: Nextjs, TailwindCss, Stripe, React Native,
+                        Express and MongoDB
                       </p>
                     </a>
                   </div>
@@ -290,8 +290,7 @@ const Projects = () => {
                         foundation.
                       </p>
                       <p className="mt-3 text-base text-gray-500">
-                        Technologies: Nextjs, Firebase (Authentication,
-                        Fiestore) and Stripe
+                        Technologies: Nextjs, Firebase and Stripe
                       </p>
                     </a>
                   </div>
