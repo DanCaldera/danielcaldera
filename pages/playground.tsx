@@ -1,28 +1,61 @@
+// @ts-nocheck
 import Head from 'next/head'
 import React, { useRef, useState } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { Canvas, useFrame, extend, useThree } from '@react-three/fiber'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import LayoutBlack from '../components/layout-black'
 import { CMS_NAME } from '../lib/constants'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import * as THREE from 'three'
 
+extend({ OrbitControls })
+
+const Cube = () => {
+  return (
+    <mesh>
+      <boxBufferGeometry attach="geometry" />
+      <meshBasicMaterial
+        attach="material"
+        color="hotpink"
+        opacity={0.5}
+        transparent
+      />
+    </mesh>
+  )
+}
+
+const Scene = () => {
+  const {
+    camera,
+    gl: { domElement },
+  } = useThree()
+  return (
+    <>
+      <Cube />
+      <orbitControls args={[camera, domElement]} />
+    </>
+  )
+}
+
 function Box(props: JSX.IntrinsicElements['mesh']) {
   const mesh = useRef<THREE.Mesh>(null!)
   const [hovered, setHover] = useState(false)
   const [active, setActive] = useState(false)
-  useFrame((state, delta) => (mesh.current.rotation.x += 0.01))
+  useFrame(() => {
+    mesh.current.rotation.x = mesh.current.rotation.y += 0.01
+  })
   return (
     <mesh
       {...props}
       ref={mesh}
-      scale={active ? 1.5 : 1}
-      onClick={(event) => setActive(!active)}
-      onPointerOver={(event) => setHover(true)}
-      onPointerOut={(event) => setHover(false)}
+      scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
+      onClick={(e) => setActive(!active)}
+      onPointerOver={(e) => setHover(true)}
+      onPointerOut={(e) => setHover(false)}
     >
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={hovered ? 'white' : 'cyan'} />
+      <boxBufferGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
     </mesh>
   )
 }
@@ -196,6 +229,18 @@ const Playground = () => {
                     Projects
                   </a>
                 </Link>
+
+                <Link href="/playground">
+                  <a
+                    className={`block px-3 py-2 rounded-md text-base font-medium ${
+                      router.pathname === '/playground'
+                        ? 'bg-cyan-600 text-white'
+                        : 'text-gray-300 hover:bg-cyan-700 hover:text-white'
+                    }`}
+                  >
+                    Playground
+                  </a>
+                </Link>
               </div>
             </div>
           )}
@@ -203,16 +248,16 @@ const Playground = () => {
 
         {/* //! Information */}
 
-        <div className="bg-black max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="max-w-5xl mx-auto">
-            <Canvas>
-              <ambientLight />
-              <pointLight position={[10, 10, 10]} />
-              <Box position={[-1.2, -2, 0]} />
-              <Box position={[1.2, 0, 0]} />
-            </Canvas>
-          </div>
-        </div>
+        <Canvas>
+          <ambientLight intensity={0.5} />
+          <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+          <pointLight position={[-10, -10, -10]} />
+          <Box position={[-1.2, 0, 0]} />
+          <Box position={[1.2, 0, 0]} />
+        </Canvas>
+        <Canvas>
+          <Scene />
+        </Canvas>
       </LayoutBlack>
     </>
   )

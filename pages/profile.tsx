@@ -187,6 +187,18 @@ const Profile = () => {
                     Projects
                   </a>
                 </Link>
+
+                <Link href="/playground">
+                  <a
+                    className={`block px-3 py-2 rounded-md text-base font-medium ${
+                      router.pathname === '/playground'
+                        ? 'bg-cyan-600 text-white'
+                        : 'text-gray-300 hover:bg-cyan-700 hover:text-white'
+                    }`}
+                  >
+                    Playground
+                  </a>
+                </Link>
               </div>
             </div>
           )}
