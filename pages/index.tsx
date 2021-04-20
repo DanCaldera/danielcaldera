@@ -53,6 +53,12 @@ const Index = () => {
                             Projects
                           </a>
                         </Link>
+
+                        <Link href="/playground">
+                          <a className="text-cyan-100 text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10">
+                            Playground
+                          </a>
+                        </Link>
                       </nav>
                     </div>
                   </div>
