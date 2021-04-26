@@ -236,6 +236,59 @@ const Projects = () => {
                 <div className="flex-shrink-0">
                   <img
                     className="h-48 w-full object-cover"
+                    src="https://res.cloudinary.com/dtip8wwch/image/upload/v1619474727/Captura_de_Pantalla_2021-04-26_a_la_s_17.05.14_spie9o.png"
+                    alt=""
+                  />
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-cyan-600">
+                      <a
+                        href="https://misfans.app/"
+                        className="hover:underline"
+                      >
+                        Web App
+                      </a>
+                    </p>
+                    <a href="https://misfans.app/" className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900">
+                        Mis Fans
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Connect with your favorite creators. Send Messages, ask
+                        for greetings, make questions. All in the same place.
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Technologies: Create React App, Firebase, Stripe,
+                        Cloudinary, Twilio, Express.
+                      </p>
+                    </a>
+                  </div>
+                  <div className="mt-6 flex items-center">
+                    <div className="flex-shrink-0">
+                      <span className="sr-only">Daniel Caldera</span>
+                      <img
+                        className="h-10 w-10 rounded-full"
+                        src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618300062/OWMGZAL3_400x400_lvqjgx.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-900">
+                        Coolhumans Studio
+                      </p>
+                      <div className="flex space-x-1 text-sm text-gray-500">
+                        <time dateTime="2020-02-12">In Progress</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0">
+                  <img
+                    className="h-48 w-full object-cover"
                     src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618394670/Captura_de_Pantalla_2021-04-14_a_la_s_5.04.19_upmokb.png"
                     alt=""
                   />
