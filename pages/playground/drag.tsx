@@ -8,6 +8,7 @@ import swap from 'lodash-move'
 import { useSprings, animated } from '@react-spring/web'
 import { useDrag } from 'react-use-gesture'
 import AnimatedNavbar from '../../components/animated-navbar'
+import { useRouter } from 'next/router'
 
 const fn =
   (order: number[], active = false, originalIndex = 0, curIndex = 0, y = 0) =>
@@ -28,7 +29,9 @@ const fn =
           immediate: false,
         }
 
-function DraggableList({ items }: { items: string[] }) {
+function DraggableList({ items }: { items: object[] }) {
+  const router = useRouter()
+
   const order = useRef(items.map((_, index) => index)) // Store indicies as a local ref, this represents the item order
   const [springs, api] = useSprings(items.length, fn(order.current)) // Create springs, each corresponds to an item, controlling its transform, scale, etc.
   const bind = useDrag(({ args: [originalIndex], active, movement: [, y] }) => {
@@ -44,26 +47,35 @@ function DraggableList({ items }: { items: string[] }) {
   })
   return (
     <div className="content" style={{ height: items.length * 50 }}>
-      {springs.map(({ zIndex, shadow, y, scale }, i) => (
-        <animated.div
-          {...bind(i)}
-          key={i}
-          style={{
-            zIndex,
-            boxShadow: shadow.to(
-              (s) => `rgba(0, 0, 0, 0.15) 0px ${s}px ${2 * s}px 0px`
-            ),
-            y,
-            scale,
-          }}
-          children={items[i]}
-        />
-      ))}
+      {springs.map(({ zIndex, shadow, y, scale }, i) => {
+        return (
+          <animated.div
+            {...bind(i)}
+            key={i}
+            style={{
+              zIndex,
+              boxShadow: shadow.to(
+                (s) => `rgba(0, 0, 0, 0.15) 0px ${s}px ${2 * s}px 0px`
+              ),
+              y,
+              scale,
+            }}
+            children={items[i].title}
+            onClick={() => router.replace(items[i].path)}
+          />
+        )
+      })}
     </div>
   )
 }
 
 const Drag = () => {
+  const items = [
+    { title: 'Inicio', path: '/' },
+    { title: 'Profile', path: '/profile' },
+    { title: 'Projects', path: '/projects' },
+    { title: 'Playground', path: '/playground' },
+  ]
   return (
     <>
       <Layout>
@@ -76,7 +88,7 @@ const Drag = () => {
         {/* //! Information */}
 
         <div className="box-border h-screen w-screen flex items-center justify-center">
-          <DraggableList items={'Github Twitter Inicio CV'.split(' ')} />
+          <DraggableList items={items} />
         </div>
       </Layout>
     </>
