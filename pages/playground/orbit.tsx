@@ -2,7 +2,6 @@
 import Head from 'next/head'
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame, extend, useThree } from '@react-three/fiber'
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import LayoutBlack from '../../components/layout-black'
 import { CMS_NAME } from '../../lib/constants'
 import { useRouter } from 'next/router'

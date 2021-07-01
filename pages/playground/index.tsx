@@ -9,11 +9,18 @@ import { useSpring, animated } from '@react-spring/web'
 
 const files = [
   {
-    title: 'Spring',
+    title: 'Orbit',
     subtitle: 'react-string background example',
     source:
-      'https://images.unsplash.com/photo-1581837474459-3bf00a7b05a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-    path: '/orbit',
+      'https://res.cloudinary.com/dtip8wwch/image/upload/v1625115716/Captura_de_Pantalla_2021-07-01_a_la_s_0.01.08_jmoazz.png',
+    path: 'playground/orbit',
+  },
+  {
+    title: 'Draggable List',
+    subtitle: 'react-strings example',
+    source:
+      'https://res.cloudinary.com/dtip8wwch/image/upload/v1625115716/Captura_de_Pantalla_2021-07-01_a_la_s_0.01.08_jmoazz.png',
+    path: 'playground/drag',
   },
 ]
 
@@ -248,7 +255,12 @@ const Playground = () => {
           <>
             <div
               className="box-border h-screen w-screen flex items-center justify-center"
-              // onClick={() => toggleOne(!stateOne)}
+              onClick={() => {
+                toggleOne(true)
+                toggleTwo(true)
+                toggleThree(true)
+                setShowAnimatedDivs(false)
+              }}
             >
               <animated.div
                 className="absolute text-7xl text-gray-900 sm:text-8xl md:text-9xl"
@@ -293,9 +305,12 @@ const Playground = () => {
               role="list"
               className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 mt-12"
             >
-              {files.map((file) => (
-                <li key={file.source} className="relative">
-                  <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden">
+              {files.map((file, index) => (
+                <li key={index} className="relative">
+                  <div
+                    className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden"
+                    onClick={() => router.push(file.path)}
+                  >
                     <img
                       src={file.source}
                       alt=""
