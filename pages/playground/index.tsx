@@ -268,30 +268,32 @@ const Playground = () => {
                 setShowAnimatedDivs(false)
               }}
             >
-              <animated.div
-                className="absolute text-7xl text-gray-900 sm:text-8xl md:text-9xl"
-                style={{
-                  opacity: xOne.to({ range: [0, 1], output: [0, 1] }),
-                  scale: xOne.to({
-                    range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
-                    output: [1],
-                  }),
-                }}
-              >
-                hola
-              </animated.div>
-              <animated.div
-                className="absolute text-md text-gray-900 mt-36"
-                style={{
-                  opacity: xOne.to({ range: [0, 1], output: [0, 1] }),
-                  scale: xOne.to({
-                    range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
-                    output: [1],
-                  }),
-                }}
-              >
-                (Click to skip animation)
-              </animated.div>
+              <div className="block ">
+                <animated.div
+                  className="text-7xl text-gray-900 sm:text-8xl md:text-9xl"
+                  style={{
+                    opacity: xOne.to({ range: [0, 1], output: [0, 1] }),
+                    scale: xOne.to({
+                      range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
+                      output: [1],
+                    }),
+                  }}
+                >
+                  hola
+                </animated.div>
+                <animated.div
+                  className="text-md text-gray-900 text-center"
+                  style={{
+                    opacity: xOne.to({ range: [0, 1], output: [0, 1] }),
+                    scale: xOne.to({
+                      range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
+                      output: [1],
+                    }),
+                  }}
+                >
+                  (Click to skip animation)
+                </animated.div>
+              </div>
               <animated.div
                 className="absolute text-center text-5xl text-gray-900 sm:text-7xl md:text-8xl"
                 style={{
