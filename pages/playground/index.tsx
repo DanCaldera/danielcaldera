@@ -10,17 +10,24 @@ import { useSpring, animated } from '@react-spring/web'
 const files = [
   {
     title: 'Orbit',
-    subtitle: 'react-string background example',
+    subtitle: 'basic react-tree example',
     source:
       'https://res.cloudinary.com/dtip8wwch/image/upload/v1625115716/Captura_de_Pantalla_2021-07-01_a_la_s_0.01.08_jmoazz.png',
     path: 'playground/orbit',
   },
   {
     title: 'Draggable List',
-    subtitle: 'react-strings example',
+    subtitle: 'useStrings example',
     source:
-      'https://res.cloudinary.com/dtip8wwch/image/upload/v1625115716/Captura_de_Pantalla_2021-07-01_a_la_s_0.01.08_jmoazz.png',
+      'https://res.cloudinary.com/dtip8wwch/image/upload/v1625120253/Captura_de_Pantalla_2021-07-01_a_la_s_1.17.18_phcxab.png',
     path: 'playground/drag',
+  },
+  {
+    title: 'Tree Navbar',
+    subtitle: 'useSpring example',
+    source:
+      'https://res.cloudinary.com/dtip8wwch/image/upload/v1625120984/Captura_de_Pantalla_2021-07-01_a_la_s_1.29.31_hilvax.png',
+    path: 'playground/tree-navbar',
   },
 ]
 
@@ -75,7 +82,6 @@ const Playground = () => {
         </Head>
 
         {/* //! NavBar */}
-
         <nav className="bg-gradient-to-r from-light-blue-800 to-cyan-600">
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">

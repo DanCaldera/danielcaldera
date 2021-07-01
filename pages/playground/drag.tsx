@@ -1,16 +1,13 @@
 // @ts-nocheck
 import Head from 'next/head'
-import React, { useRef, useState } from 'react'
-import { Canvas, useFrame, extend, useThree } from '@react-three/fiber'
+import React, { useRef } from 'react'
 import Layout from '../../components/layout'
 import { CMS_NAME } from '../../lib/constants'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
-import * as THREE from 'three'
 import clamp from 'lodash.clamp'
 import swap from 'lodash-move'
 import { useSprings, animated } from '@react-spring/web'
 import { useDrag } from 'react-use-gesture'
+import AnimatedNavbar from '../../components/animated-navbar'
 
 const fn =
   (order: number[], active = false, originalIndex = 0, curIndex = 0, y = 0) =>
@@ -73,6 +70,8 @@ const Drag = () => {
         <Head>
           <title>{CMS_NAME}</title>
         </Head>
+
+        <AnimatedNavbar title="draggable list" />
 
         {/* //! Information */}
 
