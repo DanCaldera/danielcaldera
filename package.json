@@ -37,12 +37,14 @@
     "@tailwindcss/line-clamp": "^0.2.0",
     "@types/classnames": "^2.2.11",
     "@types/jest": "^26.0.20",
+    "@types/lodash.clamp": "^4.0.6",
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
     "@types/three": "^0.127.1",
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.7",
+    "prettier": "^2.3.2",
     "tailwindcss": "^2.0.3"
   }
 }

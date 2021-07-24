@@ -7,6 +7,7 @@ import Link from 'next/link'
 
 const Index = () => {
   const [open, setOpen] = React.useState(false)
+
   return (
     <>
       <Layout>
@@ -87,12 +88,7 @@ const Index = () => {
                       stroke="currentColor"
                       aria-hidden="true"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4 6h16M4 12h16M4 18h16"
-                      />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                     {/* <!--
               Heroicon name: outline/x
@@ -107,12 +103,7 @@ const Index = () => {
                       stroke="currentColor"
                       aria-hidden="true"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M6 18L18 6M6 6l12 12"
-                      />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
                 </div>
@@ -131,12 +122,7 @@ const Index = () => {
           From: "opacity-100"
           To: "opacity-0"
       --> */}
-              {open && (
-                <div
-                  className="z-20 fixed inset-0 bg-black bg-opacity-25"
-                  aria-hidden="true"
-                ></div>
-              )}
+              {open && <div className="z-20 fixed inset-0 bg-black bg-opacity-25" aria-hidden="true"></div>}
 
               {open && (
                 <div className="z-30 absolute top-0 inset-x-0 max-w-3xl mx-auto w-full p-2 transition transform origin-top">
@@ -239,15 +225,9 @@ const Index = () => {
                               />
                             </div>
                             <div className="mt-4 text-center sm:mt-0 sm:pt-1 sm:text-left">
-                              <p className="text-sm font-medium text-gray-600">
-                                Welcome to the page of
-                              </p>
-                              <p className="text-xl font-bold text-gray-900 sm:text-2xl">
-                                Daniel Caldera
-                              </p>
-                              <p className="text-sm font-medium text-gray-600">
-                                Biomedical Engineer && MERN Developer
-                              </p>
+                              <p className="text-sm font-medium text-gray-600">Welcome to the page of</p>
+                              <p className="text-xl font-bold text-gray-900 sm:text-2xl">Daniel Caldera</p>
+                              <p className="text-sm font-medium text-gray-600">Biomedical Engineer && MERN Developer</p>
                             </div>
                           </div>
                           <div className="mt-5 flex justify-center sm:mt-0">
@@ -277,21 +257,14 @@ const Index = () => {
                         </div>
                         <div className="mt-8">
                           <h3 className="text-lg font-medium">
-                            <a
-                              href="https://github.com/DanCaldera"
-                              className="focus:outline-none"
-                            >
+                            <a href="https://github.com/DanCaldera" className="focus:outline-none">
                               {/* <!-- Extend touch target to entire panel --> */}
-                              <span
-                                className="absolute inset-0"
-                                aria-hidden="true"
-                              ></span>
+                              <span className="absolute inset-0" aria-hidden="true"></span>
                               Github Account
                             </a>
                           </h3>
                           <p className="mt-2 text-sm text-gray-500">
-                            All public repositories to support the programming
-                            community.
+                            All public repositories to support the programming community.
                           </p>
                         </div>
                         <span
@@ -333,17 +306,12 @@ const Index = () => {
                             <Link href="/projects">
                               <a className="focus:outline-none">
                                 {/* <!-- Extend touch target to entire panel --> */}
-                                <span
-                                  className="absolute inset-0"
-                                  aria-hidden="true"
-                                ></span>
+                                <span className="absolute inset-0" aria-hidden="true"></span>
                                 Personal Projects
                               </a>
                             </Link>
                           </h3>
-                          <p className="mt-2 text-sm text-gray-500">
-                            Public and private actual projects
-                          </p>
+                          <p className="mt-2 text-sm text-gray-500">Public and private actual projects</p>
                         </div>
                         <span
                           className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"
@@ -369,10 +337,7 @@ const Index = () => {
                   <section aria-labelledby="announcements-title">
                     <div className="rounded-lg bg-white overflow-hidden shadow">
                       <div className="p-6">
-                        <h2
-                          className="text-base font-medium text-gray-900"
-                          id="announcements-title"
-                        >
+                        <h2 className="text-base font-medium text-gray-900" id="announcements-title">
                           Announcements
                         </h2>
                         <div className="flow-root mt-6">
@@ -380,22 +345,15 @@ const Index = () => {
                             <li className="py-5">
                               <div className="relative focus-within:ring-2 focus-within:ring-cyan-500">
                                 <h3 className="text-sm font-semibold text-gray-800">
-                                  <a
-                                    href="https://repasoenarm.com"
-                                    className="hover:underline focus:outline-none"
-                                  >
+                                  <a href="https://repasoenarm.com" className="hover:underline focus:outline-none">
                                     {/* <!-- Extend touch target to entire panel --> */}
-                                    <span
-                                      className="absolute inset-0"
-                                      aria-hidden="true"
-                                    ></span>
+                                    <span className="absolute inset-0" aria-hidden="true"></span>
                                     Open Beta of Repaso ENARM App
                                   </a>
                                 </h3>
                                 <p className="mt-1 text-sm text-gray-600 line-clamp-2">
-                                  Web and Mobile apps to make medical students
-                                  and doctors succeed in ENARM test for medical
-                                  specialization in Mexico.
+                                  Web and Mobile apps to make medical students and doctors succeed in ENARM test for
+                                  medical specialization in Mexico.
                                 </p>
                               </div>
                             </li>
@@ -417,10 +375,7 @@ const Index = () => {
                   <section aria-labelledby="recent-hires-title">
                     <div className="rounded-lg bg-white overflow-hidden shadow">
                       <div className="p-6">
-                        <h2
-                          className="text-base font-medium text-gray-900"
-                          id="recent-hires-title"
-                        >
+                        <h2 className="text-base font-medium text-gray-900" id="recent-hires-title">
                           Jobs
                         </h2>
                         <div className="flow-root mt-6">
@@ -435,12 +390,8 @@ const Index = () => {
                                   />
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                  <p className="text-sm font-medium text-gray-900 truncate">
-                                    Coolhumans Studio
-                                  </p>
-                                  <p className="text-sm text-gray-500 truncate">
-                                    @coolhumansxyz
-                                  </p>
+                                  <p className="text-sm font-medium text-gray-900 truncate">Coolhumans Studio</p>
+                                  <p className="text-sm text-gray-500 truncate">@coolhumansxyz</p>
                                 </div>
                                 <div>
                                   <a
@@ -463,12 +414,8 @@ const Index = () => {
                                   />
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                  <p className="text-sm font-medium text-gray-900 truncate">
-                                    LatinXMafia
-                                  </p>
-                                  <p className="text-sm text-gray-500 truncate">
-                                    @LatinXMafia
-                                  </p>
+                                  <p className="text-sm font-medium text-gray-900 truncate">LatinXMafia</p>
+                                  <p className="text-sm text-gray-500 truncate">@LatinXMafia</p>
                                 </div>
                                 <div>
                                   <a
@@ -491,12 +438,8 @@ const Index = () => {
                                   />
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                  <p className="text-sm font-medium text-gray-900 truncate">
-                                    Bosch Mexico
-                                  </p>
-                                  <p className="text-sm text-gray-500 truncate">
-                                    @BoschMexico
-                                  </p>
+                                  <p className="text-sm font-medium text-gray-900 truncate">Bosch Mexico</p>
+                                  <p className="text-sm text-gray-500 truncate">@BoschMexico</p>
                                 </div>
                                 <div>
                                   <a
@@ -528,9 +471,7 @@ const Index = () => {
           <footer>
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
               <div className="border-t border-gray-200 py-8 text-sm text-gray-500 text-center sm:text-left">
-                <span className="block sm:inline">
-                  &copy; 2021 Daniel Caldera.
-                </span>{' '}
+                <span className="block sm:inline">&copy; 2021 Daniel Caldera.</span>{' '}
                 <span className="block sm:inline">All rights reserved.</span>
               </div>
             </div>

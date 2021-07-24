@@ -46,12 +46,7 @@ const Profile = () => {
                     stroke="currentColor"
                     aria-hidden="true"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
                   {/* <!--
             Icon when menu is open.
@@ -68,12 +63,7 @@ const Profile = () => {
                     stroke="currentColor"
                     aria-hidden="true"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
               </div>
@@ -224,15 +214,11 @@ const Profile = () => {
               </div>
               <div className="mt-6 sm:flex-1 sm:min-w-0 sm:flex sm:items-center sm:justify-end sm:space-x-6 sm:pb-1">
                 <div className="sm:hidden md:block mt-6 min-w-0 flex-1">
-                  <h1 className="text-2xl font-bold text-gray-900 truncate">
-                    Daniel Caldera
-                  </h1>
+                  <h1 className="text-2xl font-bold text-gray-900 truncate">Daniel Caldera</h1>
                 </div>
                 <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
                   <button
-                    onClick={() =>
-                      (window.location.href = 'mailto:bdcaldera@gmail.com')
-                    }
+                    onClick={() => (window.location.href = 'mailto:bdcaldera@gmail.com')}
                     type="button"
                     className="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
                   >
@@ -260,9 +246,7 @@ const Profile = () => {
               </div>
             </div>
             <div className="hidden sm:block md:hidden mt-6 min-w-0 flex-1">
-              <h1 className="text-2xl font-bold text-gray-900 truncate">
-                Daniel Caldera
-              </h1>
+              <h1 className="text-2xl font-bold text-gray-900 truncate">Daniel Caldera</h1>
             </div>
           </div>
         </div>
@@ -272,85 +256,51 @@ const Profile = () => {
           <div className="max-w-5xl mx-auto">
             <div className="bg-white shadow overflow-hidden sm:rounded-lg">
               <div className="px-4 py-5 sm:px-6">
-                <h3 className="text-lg leading-6 font-medium text-gray-900">
-                  Profile
-                </h3>
-                <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                  Short Resume
-                </p>
+                <h3 className="text-lg leading-6 font-medium text-gray-900">Profile</h3>
+                <p className="mt-1 max-w-2xl text-sm text-gray-500">Short Resume</p>
               </div>
               <div className="border-t border-gray-200 px-4 py-5 sm:px-6">
                 <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
                   <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Full name
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      Daniel Caldera Rosas
-                    </dd>
+                    <dt className="text-sm font-medium text-gray-500">Full name</dt>
+                    <dd className="mt-1 text-sm text-gray-900">Daniel Caldera Rosas</dd>
                   </div>
                   <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Email address
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      bdcaldera@gmail.com
-                    </dd>
+                    <dt className="text-sm font-medium text-gray-500">Email address</dt>
+                    <dd className="mt-1 text-sm text-gray-900">bdcaldera@gmail.com</dd>
                   </div>
                   <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Degree
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      Biomedical Engineer
-                    </dd>
+                    <dt className="text-sm font-medium text-gray-500">Degree</dt>
+                    <dd className="mt-1 text-sm text-gray-900">Biomedical Engineer</dd>
                   </div>
                   <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      University
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      Universidad De Guadalajara
-                    </dd>
+                    <dt className="text-sm font-medium text-gray-500">University</dt>
+                    <dd className="mt-1 text-sm text-gray-900">Universidad De Guadalajara</dd>
                   </div>
                   <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Especiality
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      MERN Developer
-                    </dd>
+                    <dt className="text-sm font-medium text-gray-500">Especiality</dt>
+                    <dd className="mt-1 text-sm text-gray-900">MERN/MEVN</dd>
                   </div>
                   <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Experience
-                    </dt>
+                    <dt className="text-sm font-medium text-gray-500">Experience</dt>
                     <dd className="mt-1 text-sm text-gray-900">+1 Years</dd>
                   </div>
 
                   <div className="sm:col-span-1">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Location
-                    </dt>
-                    <dd className="mt-1 text-sm text-gray-900">
-                      Jerez, Zacatecas México
-                    </dd>
+                    <dt className="text-sm font-medium text-gray-500">Location</dt>
+                    <dd className="mt-1 text-sm text-gray-900">Jerez, Zacatecas México</dd>
                   </div>
                   <div className="sm:col-span-2">
                     <dt className="text-sm font-medium text-gray-500">About</dt>
                     <dd className="mt-1 text-sm text-gray-900">
-                      I’m a Biomedical Engineer from ”Universidad de
-                      Guadalajara”, My main language is Javascript and I have
-                      preferences to use react family tecnologies (like nextjs),
-                      React Native for Multiplatform applications, also I have
-                      knowledge creating RESTapi with Nodejs or using new
-                      tecnologies trends such as GraphQL.
+                      I’m a Biomedical Engineer from ”Universidad de Guadalajara”, My main language is Javascript and I
+                      have preferences to use react family tecnologies like nextjs and eventually learning more front
+                      technologies such as nuxtjs, React Native for iOS and Android apps, also I have knowledge creating
+                      RESTapi's with Nodejs with Express or using new tecnologies trends such as GraphQL.
                     </dd>
                   </div>
                   <div className="sm:col-span-2">
-                    <dt className="text-sm font-medium text-gray-500">
-                      Attachments
-                    </dt>
+                    <dt className="text-sm font-medium text-gray-500">Attachments</dt>
                     <dd className="mt-1 text-sm text-gray-900">
                       <ul className="border border-gray-200 rounded-md divide-y divide-gray-200">
                         <li className="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
@@ -369,9 +319,7 @@ const Profile = () => {
                                 clipRule="evenodd"
                               />
                             </svg>
-                            <span className="ml-2 flex-1 w-0 truncate">
-                              cv.pdf
-                            </span>
+                            <span className="ml-2 flex-1 w-0 truncate">cv.pdf</span>
                           </div>
                           <div className="ml-4 flex-shrink-0">
                             <a

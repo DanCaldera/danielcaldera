@@ -43,12 +43,7 @@ const Projects = () => {
                     stroke="currentColor"
                     aria-hidden="true"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
                   {/* <!--
             Icon when menu is open.
@@ -65,12 +60,7 @@ const Projects = () => {
                     stroke="currentColor"
                     aria-hidden="true"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
               </div>
@@ -208,19 +198,14 @@ const Projects = () => {
         <div className="bg-white">
           <div className="max-w-7xl mx-auto py-4 px-4 sm:py-16 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h2 className="text-base font-semibold text-cyan-600 tracking-wide uppercase">
-                Projects
-              </h2>
+              <h2 className="text-base font-semibold text-cyan-600 tracking-wide uppercase">Projects</h2>
               <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
                 Personal and Private Projects.
               </p>
               <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-                When something is important enough, you do it even if the odds
-                are not in your favor.
+                When something is important enough, you do it even if the odds are not in your favor.
               </p>
-              <p className="max-w-xl italic mx-auto text-base text-gray-500">
-                - Elon Musk
-              </p>
+              <p className="max-w-xl italic mx-auto text-base text-gray-500">- Elon Musk</p>
             </div>
           </div>
         </div>
@@ -236,31 +221,108 @@ const Projects = () => {
                 <div className="flex-shrink-0">
                   <img
                     className="h-48 w-full object-cover"
-                    src="https://res.cloudinary.com/dtip8wwch/image/upload/v1619474727/Captura_de_Pantalla_2021-04-26_a_la_s_17.05.14_spie9o.png"
+                    src="https://res.cloudinary.com/dtip8wwch/image/upload/v1627164152/ninera_u10a9r.png"
                     alt=""
                   />
                 </div>
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                   <div className="flex-1">
                     <p className="text-sm font-medium text-cyan-600">
-                      <a
-                        href="https://misfans.app/"
-                        className="hover:underline"
-                      >
+                      <a href="https://ninera.vercel.app/" className="hover:underline">
                         Web App
                       </a>
                     </p>
-                    <a href="https://misfans.app/" className="block mt-2">
-                      <p className="text-xl font-semibold text-gray-900">
-                        Mis Fans
+                    <a href="https://ninera.vercel.app/" className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900">ninera</p>
+                      <p className="mt-3 text-base text-gray-500">IoT solution.</p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Technologies: NuxtJs, Mongodb, Tailwindcss, EMQx, Express.
+                      </p>
+                    </a>
+                  </div>
+                  <div className="mt-6 flex items-center">
+                    <div className="flex-shrink-0">
+                      <span className="sr-only">Daniel Caldera</span>
+                      <img
+                        className="h-10 w-10 rounded-full"
+                        src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618297277/Captura_de_Pantalla_2021-04-13_a_la_s_1.58.22_b86epk.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-900">Daniel Caldera</p>
+                      <div className="flex space-x-1 text-sm text-gray-500">
+                        <time dateTime="2020-02-12">In Progress</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0">
+                  <img
+                    className="h-48 w-full object-cover"
+                    src="https://res.cloudinary.com/dtip8wwch/image/upload/v1627163691/37_s1fsbe.png"
+                    alt=""
+                  />
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-cyan-600">
+                      <a href="https://dondiablo.vercel.app/es" className="hover:underline">
+                        Web App
+                      </a>
+                    </p>
+                    <a href="https://dondiablo.vercel.app/es" className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900">DonDiablo</p>
+                      <p className="mt-3 text-base text-gray-500">e-commerce solution.</p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Technologies: NextJs, Mongodb, Tailwindcss, Stripe, Express.
+                      </p>
+                    </a>
+                  </div>
+                  <div className="mt-6 flex items-center">
+                    <div className="flex-shrink-0">
+                      <span className="sr-only">Daniel Caldera</span>
+                      <img
+                        className="h-10 w-10 rounded-full"
+                        src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618297277/Captura_de_Pantalla_2021-04-13_a_la_s_1.58.22_b86epk.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-900">Daniel Caldera</p>
+                      <div className="flex space-x-1 text-sm text-gray-500">
+                        <time dateTime="2020-02-12">In Progress</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0">
+                  <img
+                    className="h-48 w-full object-cover"
+                    src="https://res.cloudinary.com/dtip8wwch/image/upload/v1627162974/Captura_de_Pantalla_2021-07-24_a_la_s_16.42.42_k0l1ka.png"
+                    alt=""
+                  />
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-cyan-600">
+                      <a href="https://cura-development.vercel.app/" className="hover:underline">
+                        Web App
+                      </a>
+                    </p>
+                    <a href="https://cura-development.vercel.app/" className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900">Cura</p>
+                      <p className="mt-3 text-base text-gray-500">
+                        The Linktree solution for all your favorite products.
                       </p>
                       <p className="mt-3 text-base text-gray-500">
-                        Connect with your favorite creators. Send Messages, ask
-                        for greetings, make questions. All in the same place.
-                      </p>
-                      <p className="mt-3 text-base text-gray-500">
-                        Technologies: Create React App, Firebase, Stripe,
-                        Cloudinary, Twilio, Express.
+                        Technologies: NextJs, Mongodb, Stripe, Cloudinary, Express.
                       </p>
                     </a>
                   </div>
@@ -274,11 +336,54 @@ const Projects = () => {
                       />
                     </div>
                     <div className="ml-3">
-                      <p className="text-sm font-medium text-gray-900">
-                        Coolhumans Studio
-                      </p>
+                      <p className="text-sm font-medium text-gray-900">Coolhumans Studio</p>
                       <div className="flex space-x-1 text-sm text-gray-500">
                         <time dateTime="2020-02-12">In Progress</time>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div className="flex-shrink-0">
+                  <img
+                    className="h-48 w-full object-cover"
+                    src="https://res.cloudinary.com/dtip8wwch/image/upload/v1619474727/Captura_de_Pantalla_2021-04-26_a_la_s_17.05.14_spie9o.png"
+                    alt=""
+                  />
+                </div>
+                <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-cyan-600">
+                      <a href="https://misfans.app/" className="hover:underline">
+                        Web App
+                      </a>
+                    </p>
+                    <a href="https://misfans.app/" className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900">Mis Fans</p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Connect with your favorite creators. Send Messages, ask for greetings, make questions. All in
+                        the same place.
+                      </p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Technologies: NextJs, Typescript, Firebase, Stripe, Cloudinary, Twilio, Express.
+                      </p>
+                    </a>
+                  </div>
+                  <div className="mt-6 flex items-center">
+                    <div className="flex-shrink-0">
+                      <span className="sr-only">Daniel Caldera</span>
+                      <img
+                        className="h-10 w-10 rounded-full"
+                        src="https://res.cloudinary.com/dtip8wwch/image/upload/v1618300062/OWMGZAL3_400x400_lvqjgx.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-900">Coolhumans Studio</p>
+                      <div className="flex space-x-1 text-sm text-gray-500">
+                        <time dateTime="2020-02-12">Jul 2021</time>
                       </div>
                     </div>
                   </div>
@@ -296,25 +401,19 @@ const Projects = () => {
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                   <div className="flex-1">
                     <p className="text-sm font-medium text-cyan-600">
-                      <a
-                        href="https://repasoenarm.com/"
-                        className="hover:underline"
-                      >
+                      <a href="https://repasoenarm.com/" className="hover:underline">
                         Web App and Mobile App
                       </a>
                     </p>
                     <a href="https://repasoenarm.com/" className="block mt-2">
-                      <p className="text-xl font-semibold text-gray-900">
-                        Repaso ENARM
+                      <p className="text-xl font-semibold text-gray-900">Repaso ENARM</p>
+                      <p className="mt-3 text-base text-gray-500">
+                        Web and Mobile apps to make medical students and doctors succeed in ENARM test for medical
+                        specialization in Mexico.
                       </p>
                       <p className="mt-3 text-base text-gray-500">
-                        Web and Mobile apps to make medical students and doctors
-                        succeed in ENARM test for medical specialization in
-                        Mexico.
-                      </p>
-                      <p className="mt-3 text-base text-gray-500">
-                        Technologies: Nextjs, TailwindCss, Typescript, Stripe,
-                        React Native (iOS and Android), Express and MongoDB
+                        Technologies: Nextjs, TailwindCss, Typescript, Stripe, React Native (iOS and Android), Express
+                        and MongoDB
                       </p>
                     </a>
                   </div>
@@ -328,9 +427,7 @@ const Projects = () => {
                       />
                     </div>
                     <div className="ml-3">
-                      <p className="text-sm font-medium text-gray-900">
-                        Daniel Caldera
-                      </p>
+                      <p className="text-sm font-medium text-gray-900">Daniel Caldera</p>
                       <div className="flex space-x-1 text-sm text-gray-500">
                         <time dateTime="2020-02-12">In Progress</time>
                       </div>
@@ -350,24 +447,17 @@ const Projects = () => {
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                   <div className="flex-1">
                     <p className="text-sm font-medium text-cyan-600">
-                      <a
-                        href="https://dumbhandles.xyz/"
-                        className="hover:underline"
-                      >
+                      <a href="https://dumbhandles.xyz/" className="hover:underline">
                         Web App
                       </a>
                     </p>
                     <a href="https://dumbhandles.xyz/" className="block mt-2">
-                      <p className="text-xl font-semibold text-gray-900">
-                        dumbhandles
-                      </p>
+                      <p className="text-xl font-semibold text-gray-900">dumbhandles</p>
                       <p className="mt-3 text-base text-gray-500">
-                        Viral Project to collect funds for LatinXMafia
-                        foundation selling handles to redirect to twitter.
+                        Viral Project to collect funds for LatinXMafia foundation selling handles to redirect to
+                        twitter.
                       </p>
-                      <p className="mt-3 text-base text-gray-500">
-                        Technologies: Nextjs, Firebase and Stripe
-                      </p>
+                      <p className="mt-3 text-base text-gray-500">Technologies: Nextjs, Firebase and Stripe</p>
                     </a>
                   </div>
                   <div className="mt-6 flex items-center">
@@ -383,10 +473,7 @@ const Projects = () => {
                     </div>
                     <div className="ml-3">
                       <p className="text-sm font-medium text-gray-900">
-                        <a
-                          href="https://twitter.com/LatinxMafia"
-                          className="hover:underline"
-                        >
+                        <a href="https://twitter.com/LatinxMafia" className="hover:underline">
                           LatinXMafia
                         </a>
                       </p>
@@ -411,27 +498,16 @@ const Projects = () => {
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                   <div className="flex-1">
                     <p className="text-sm font-medium text-cyan-600">
-                      <a
-                        href="https://apps.apple.com/us/app/garlock/id1520124341"
-                        className="hover:underline"
-                      >
+                      <a href="https://apps.apple.com/us/app/garlock/id1520124341" className="hover:underline">
                         Mobile App
                       </a>
                     </p>
-                    <a
-                      href="https://apps.apple.com/us/app/garlock/id1520124341"
-                      className="block mt-2"
-                    >
-                      <p className="text-xl font-semibold text-gray-900">
-                        Garlock
-                      </p>
+                    <a href="https://apps.apple.com/us/app/garlock/id1520124341" className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900">Garlock</p>
                       <p className="mt-3 text-base text-gray-500">
-                        Mobile App for iOS and Android for the company leader in
-                        sealing integrity
+                        Mobile App for iOS and Android for the company leader in sealing integrity
                       </p>
-                      <p className="mt-3 text-base text-gray-500">
-                        Technologies: React Native, Typescript
-                      </p>
+                      <p className="mt-3 text-base text-gray-500">Technologies: React Native, Typescript</p>
                     </a>
                   </div>
                   <div className="mt-6 flex items-center">
@@ -447,10 +523,7 @@ const Projects = () => {
                     </div>
                     <div className="ml-3">
                       <p className="text-sm font-medium text-gray-900">
-                        <a
-                          href="https://twitter.com/BoschMexico"
-                          className="hover:underline"
-                        >
+                        <a href="https://twitter.com/BoschMexico" className="hover:underline">
                           Bosch Mexico
                         </a>
                       </p>
@@ -482,20 +555,13 @@ const Projects = () => {
                         1st Place Hackify League (San Diego Red Mention)
                       </a>
                     </p>
-                    <a
-                      href="https://fans-app.vercel.app/movies"
-                      className="block mt-2"
-                    >
-                      <p className="text-xl font-semibold text-gray-900">
-                        MovieFans
+                    <a href="https://fans-app.vercel.app/movies" className="block mt-2">
+                      <p className="text-xl font-semibold text-gray-900">MovieFans</p>
+                      <p className="mt-3 text-base text-gray-500">
+                        WebApp developed for Hackify League obtaining first place in tomatazos challenge
                       </p>
                       <p className="mt-3 text-base text-gray-500">
-                        WebApp developed for Hackify League obtaining first
-                        place in tomatazos challenge
-                      </p>
-                      <p className="mt-3 text-base text-gray-500">
-                        Technologies: Create React App, Redux, GraphQL, MongoDB
-                        and themoviedb API
+                        Technologies: Create React App, Redux, GraphQL, MongoDB and themoviedb API
                       </p>
                     </a>
                   </div>
@@ -512,10 +578,7 @@ const Projects = () => {
                     </div>
                     <div className="ml-3">
                       <p className="text-sm font-medium text-gray-900">
-                        <a
-                          href="https://www.facebook.com/hackifyLeague"
-                          className="hover:underline"
-                        >
+                        <a href="https://www.facebook.com/hackifyLeague" className="hover:underline">
                           Hackify League
                         </a>
                       </p>
@@ -543,10 +606,7 @@ const Projects = () => {
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                   <div className="flex-1">
                     <p className="text-sm font-medium text-cyan-600">
-                      <a
-                        href="https://repasoenarm.com/"
-                        className="hover:underline"
-                      >
+                      <a href="https://repasoenarm.com/" className="hover:underline">
                         Research
                       </a>
                     </p>
@@ -555,20 +615,15 @@ const Projects = () => {
                         Myoelectric Signal Analysis for Neuromuscular Function
                       </p>
                       <p className="mt-3 text-base text-gray-500">
-                        Several projects related to HDEMG and EMG analysis with
-                        MITACS program.
+                        Several projects related to HDEMG and EMG analysis with MITACS program.
                       </p>
-                      <p className="mt-3 text-base text-gray-500">
-                        Technologies: MATLAB
-                      </p>
+                      <p className="mt-3 text-base text-gray-500">Technologies: MATLAB</p>
                     </a>
                   </div>
                   <div className="mt-6 flex items-center">
                     <div className="flex-shrink-0">
                       <a href="https://www.unb.ca/">
-                        <span className="sr-only">
-                          University of New Brunswick
-                        </span>
+                        <span className="sr-only">University of New Brunswick</span>
                         <img
                           className="h-10 w-10 rounded-full"
                           src="http://www2.unb.ca/~alloyd1/UNBRED+BLACK.jpg"
@@ -577,9 +632,7 @@ const Projects = () => {
                       </a>
                     </div>
                     <div className="ml-3">
-                      <p className="text-sm font-medium text-gray-900">
-                        University of New Brunswick
-                      </p>
+                      <p className="text-sm font-medium text-gray-900">University of New Brunswick</p>
                       <div className="flex space-x-1 text-sm text-gray-500">
                         <time dateTime="2020-03-10">Oct, 2019</time>
                       </div>
